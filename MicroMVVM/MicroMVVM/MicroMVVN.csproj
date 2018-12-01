@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>AJdev.MicroMVVN</RootNamespace>
+    <Authors>AJdev</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Xamarin.MicroMVVN</PackageId>
+    <Description>Ce package est un ensemble minimal d’outils MVVM pour Xamarin Form. Il comprend
+-	Un IOC
+-	Un ViewLocator
+-	Un ViewModeleBase
+-	Un service de Navigation
+-	Un service de gestion des Popup
+-	Une extension XAML pour la traduction
+-	Une extension XAML pour accéder aux images
+</Description>
+    <Copyright>AJdev</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\" />
+  </ItemGroup>
+</Project>
